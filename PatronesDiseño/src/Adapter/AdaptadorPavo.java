@@ -5,10 +5,19 @@
  */
 package Adapter;
 
-/**
- *
- * @author kari
- */
-public class AdaptadorPavo {
-    
+public class AdaptadorPavo implements Pato{
+        private Pavo pavo;
+               
+	public AdaptadorPavo(Pavo pavo){     	
+                this.pavo=pavo;
+        }
+        
+        public void graznar() {
+            pavo.gluglutear();
+        }
+        
+        public void volar() {
+            pavo.volar();
+        }
 }
+

@@ -9,6 +9,8 @@ package Adapter;
  *
  * @author kari
  */
-public class Pato {
-    
+public interface Pato {
+    public void graznar();
+    public void volar();
+
 }
